@@ -66,7 +66,7 @@ object DauApp {
     }
 
     // 保存到Redis中
-    distinctDStream.foreachRDD{ rdd=>
+    startupLogStream.foreachRDD{ rdd=>
       rdd.foreachPartition{startuplogItr=>
         val jedis: Jedis = RedisUtil.getJedisClient
         for (startuplog<- startuplogItr) {
