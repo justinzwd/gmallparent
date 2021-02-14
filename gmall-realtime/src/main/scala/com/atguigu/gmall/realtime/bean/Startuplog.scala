@@ -1,4 +1,4 @@
-package com.atguigu.gmall.realtime
+package com.atguigu.gmall.realtime.bean
 
 case class StartUpLog(mid:String,
                       uid:String,

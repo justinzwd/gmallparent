@@ -78,8 +78,9 @@ object MyEsUtil {
 
   def main(args: Array[String]): Unit = {
     val jest: JestClient = getClient
-    val source = "\"name\":\"li4\",\n  \"age\":456,\n  \"amount\":250.1,\n  \"phone_num\":\"138****2131\""
-    val index: Index = new Index.Builder(source).index("gmall_test").`type`("_doc").build()
+    //不要忘了两边的花括号
+    val source = "{\n  \"name\":\"wanwu\",\n  \"age\":456,\n  \"amount\":250.1,\n  \"phone_num\":\"138****2131\"\n}"
+    val index: Index = new Index.Builder(source).index("gmall_test1").`type`("_doc").build()
     jest.execute(index)
     close(jest)
   }
