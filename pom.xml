@@ -20,7 +20,6 @@
         <module>gmall_mock</module>
         <module>gmall-logger</module>
         <module>gmall-realtime</module>
-        <module>gmall-publisher</module>
     </modules>
 
     <properties>
