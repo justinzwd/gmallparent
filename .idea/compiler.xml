@@ -8,9 +8,10 @@
         <outputRelativeToContentRoot value="true" />
         <module name="gmall_publisher" />
         <module name="gmall_common" />
+        <module name="dw-chart" />
         <module name="gmall-realtime" />
-        <module name="gmall_mock" />
         <module name="gmall-logger" />
+        <module name="gmall_mock" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
