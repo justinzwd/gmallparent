@@ -12,6 +12,7 @@
         <module name="gmall-realtime" />
         <module name="gmall-logger" />
         <module name="gmall_mock" />
+        <module name="gmall-canal" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
